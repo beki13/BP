@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/top-nav.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./fa/css/all.css" media="all" />
+    
+    <title>Bereket Tadese</title>
+  </head>
+  <body>
+    <div class="top-nav">
+      <div class="nav-name">
+        Bereket Tadese
+      </div>
+      <div class="nav-btn" onClick="toggleNavs()">
+        <i class="fa fa-list"></i>
+      </div>
+      <ul id="navs">
+        <li>home </li>
+        <li>about</li>
+        <li>service</li>
+        <li>contact me</li>
+      </ul>
+    </div>
+    
+    
+    <script type="text/javascript" charset="utf-8">
+      var navState = 0;
+      function toggleNavs() {
+        var nav = document.getElementById('navs');
+        if (navState == 0) {
+          nav.style.height = "auto";
+          navState = 1;
+        }
+        else{
+          nav.style.height = "0px";
+          navState = 0;
+        }
+      }
+      
+    </script>
+  </body>
+</html>
