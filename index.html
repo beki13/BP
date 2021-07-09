@@ -3,41 +3,41 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="./css/top-nav.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./css/top.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./css/body.css" media="all" />
     <link rel="stylesheet" href="./fa/css/all.css" media="all" />
     
     <title>Bereket Tadese</title>
   </head>
   <body>
-    <div class="top-nav">
-      <div class="nav-name">
-        Bereket Tadese
+    <div class="profile">
+      <div class="prof-pic">
+        <img class="my-pic" src="./img/mypic2.png" alt="my photo" width="30%"/>
       </div>
-      <div class="nav-btn" onClick="toggleNavs()">
-        <i class="fa fa-list"></i>
+      <div class="top-infos">
+        <div class="top-name">
+          Bereket Tdese
+        </div>
+        <div class="top-job">
+          software engineer
+        </div>
       </div>
-      <ul id="navs">
-        <li>home </li>
-        <li>about</li>
-        <li>service</li>
-        <li>contact me</li>
+      <ul class="navs">
+        <li><i class="far fa-id-card"></i></li>
+        <li><i class="fa fa-code"></i></li>
+        <li><i class="fa fa-info"></i></li>
+        <li><i class="fa fa-dollar-sign"></i></li>
+        <li><i class="far fa-chart-bar"></i></li>
+        <li><i class="far fa-newspaper"></i></li>
+        <li><i class="far fa-envelope"></i></li>
       </ul>
     </div>
     
+    <div class="body">
+      hi
+    </div>
     
     <script type="text/javascript" charset="utf-8">
-      var navState = 0;
-      function toggleNavs() {
-        var nav = document.getElementById('navs');
-        if (navState == 0) {
-          nav.style.height = "auto";
-          navState = 1;
-        }
-        else{
-          nav.style.height = "0px";
-          navState = 0;
-        }
-      }
       
     </script>
   </body>
